@@ -12,9 +12,8 @@ public class App {
 
     public static String factorial(int numero) {
         int factorial = 1, i;
-        for (i = 1; i <= numero; i++) {
-            factorial = factorial * i;
-        }
+        for (i = 1; i <= numero; i++)
+            factorial *= i;
         return "Factorial de " + numero + " es: " + factorial;
     }
 }
