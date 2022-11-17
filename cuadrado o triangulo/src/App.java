@@ -1,7 +1,3 @@
-/*Realizar un programa que calcule el area y perimetro de un cuadrilatero dada la longitud de sus 2 lados.
-Los valores de la longitud deben ingresarse por por linea de ordenes. 
-si es un cuadrado, solo se proporcionara la longitud de uno de los lados.*/
-
 import javax.swing.JOptionPane;
 
 public class App {
@@ -10,7 +6,6 @@ public class App {
         int opcion;
         opcion = Integer.parseInt(
                 JOptionPane.showInputDialog("Escoge la opcion deseada:" + "\n1. Cuadrado\n" + "2. Rectangulo"));
-
         switch (opcion) {
             case 1 -> {
                 lado1 = Float.parseFloat(JOptionPane.showInputDialog("Ingresa el valor del lado"));
