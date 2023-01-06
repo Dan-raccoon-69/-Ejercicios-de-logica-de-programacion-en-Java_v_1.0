@@ -14,6 +14,14 @@ public class App {
         System.out.println(restarSinRestar(-4, 3)); // -7
         System.out.println(restarSinRestar(10, -20)); // 30
         System.out.println(restarSinRestar(5, -30)); // 35
+        
+        System.out.println();
+        System.out.println(restarSinRestarV2(5, 1));
+        System.out.println(restarSinRestarV2(15, 10));
+        System.out.println(restarSinRestarV2(-10, -13));
+        System.out.println(restarSinRestarV2(-4, -3));
+        System.out.println(restarSinRestarV2(10, -20));
+        System.out.println(restarSinRestarV2(5, -30));
 
     }
 
@@ -21,4 +29,15 @@ public class App {
         System.out.println("Resta de: " + valor1 + " (-) " + valor2);
         return valor1 + ((-1) * valor2);
     }
+
+    public static int restarSinRestarV2(int valor1, int valor2) {
+        System.out.println("Resta de: " + valor1 + " (-) " + valor2);
+        int value = 0;
+        while (valor1 > valor2) {
+            valor2++;
+            value++;
+        }
+        return value;
+    }
+
 }
